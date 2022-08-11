@@ -54,7 +54,11 @@ const Header = () => {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: "center", md: "start" }}
+          className="ml-50"
+        >
           <Logo />
 
           <Flex display={{ base: "none", md: "flex" }} ml={60}>
