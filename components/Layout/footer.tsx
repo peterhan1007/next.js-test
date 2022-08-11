@@ -1,42 +1,37 @@
 import {
   ButtonGroup,
   Container,
+  HStack,
   IconButton,
   Stack,
+  VStack,
   Text,
 } from "@chakra-ui/react";
 import * as React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-export const Footer = () => (
-  <Container as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
+const Footer = () => (
+  <Container
+    as="footer"
+    bg="black"
+    color={"white"}
+    maxWidth="200ch"
+    mt={"auto"}
+    p="5"
+  >
     <Stack spacing={{ base: "4", md: "5" }}>
-      <Stack justify="space-between" direction="row" align="center">
-        <ButtonGroup variant="ghost">
-          <IconButton
-            as="a"
-            href="#"
-            aria-label="LinkedIn"
-            icon={<FaLinkedin fontSize="1.25rem" />}
-          />
-          <IconButton
-            as="a"
-            href="#"
-            aria-label="GitHub"
-            icon={<FaGithub fontSize="1.25rem" />}
-          />
-          <IconButton
-            as="a"
-            href="#"
-            aria-label="Twitter"
-            icon={<FaTwitter fontSize="1.25rem" />}
-          />
-        </ButtonGroup>
-      </Stack>
       <Text fontSize="sm" color="subtle">
-        &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights
-        reserved.
+        <VStack>
+          <Text fontWeight={"extrabold"}>
+            &copy; {new Date().getFullYear()} TALLYSIGHT Inc. RESERVED reserved.
+          </Text>
+          <Text>
+            If you or someone you know has a gambling problem and wants help,
+            call 1-800-Gambler. You must be 21 years or older to place a bet.
+          </Text>
+        </VStack>
       </Text>
     </Stack>
   </Container>
 );
+
+export default Footer;
