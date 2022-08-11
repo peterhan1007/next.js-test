@@ -13,7 +13,7 @@ const Logo = () => {
             height={30}
           />
         </Link>
-        <Text fontSize={"lg"} className="mx-1 font-black">
+        <Text fontWeight={"extrabold"} className="mx-1 font-black">
           Tallysight
         </Text>
       </HStack>
