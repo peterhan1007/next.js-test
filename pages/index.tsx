@@ -6,6 +6,7 @@ import haversine from "haversine";
 
 import states from "../states.json";
 import LocationState from "../components/State";
+import Offer from "../components/Offer";
 
 interface InfoParmas {
   city: string;
@@ -22,8 +23,6 @@ interface InfoProps {
 }
 
 const Home: NextPage<InfoProps> = ({ info }) => {
-  const personInfo = info;
-  console.log(info);
   const [latitude, longitude] = info.loc.split(",");
   const origin = {
     latitude,
@@ -56,6 +55,9 @@ const Home: NextPage<InfoProps> = ({ info }) => {
           nearestDistance={nearestDistance}
           nearestState={nearestState}
         />
+        <Offer />
+        <Offer />
+        <Offer />
       </main>
     </>
   );
@@ -70,6 +72,19 @@ export async function getServerSideProps() {
     }),
   });
   const info = await res.json();
+
+  const offer_res = await fetch(
+    "https://api.airtable.com/v0/appDFOzemd24MG2CZ/sportsbooks/",
+    {
+      headers: new Headers({
+        Authorization: "Bearer " + "keyv05VZXGSFfVKO4",
+        "Content-Type": "application/x-www-form-urlencoded",
+      }),
+    }
+  );
+  const offer_info = await offer_res.json();
+  console.log(offer_info);
+
   return {
     props: { info }, // will be passed to the page component as props
   };

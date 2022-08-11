@@ -13,7 +13,7 @@ const PositionState: NextPage<StateProps> = ({
   return (
     <VStack className="m-20">
       <Text fontWeight={"extrabold"}>
-        BEST SPORTSBOOK OFFERS IN {nearestDistance}
+        BEST SPORTSBOOK OFFERS IN {nearestState}
       </Text>
       <Text>
         <Flex>
@@ -23,7 +23,7 @@ const PositionState: NextPage<StateProps> = ({
           {"  "}
           is{"  "}
           <Text fontWeight={"extrabold"} as="span" mx={1}>
-            234 miles
+            {nearestDistance}
           </Text>
           {"  "}
           away from you.

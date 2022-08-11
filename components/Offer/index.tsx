@@ -13,7 +13,13 @@ import {
 const Offer = () => {
   return (
     <Center>
-      <Box mx="5" border="5px" borderColor="black.200">
+      <Box
+        mx="5"
+        border="2px"
+        borderColor="blackAlpha.300"
+        mb="2"
+        borderRadius={"10"}
+      >
         <Flex color="white" px="6">
           <Center w="100px" color={"black"}>
             <VStack>
