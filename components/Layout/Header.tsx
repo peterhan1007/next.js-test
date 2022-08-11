@@ -57,30 +57,10 @@ const Header = () => {
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Logo />
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display={{ base: "none", md: "flex" }} ml={60}>
             <DesktopNav />
           </Flex>
         </Flex>
-
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"pink.400"}
-            _hover={{
-              bg: "pink.300",
-            }}
-          >
-            Sign Up
-          </Button>
-        </Stack>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -252,41 +232,41 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Inspiration",
+    label: "BEST ODDS",
     children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
-      },
+      // {
+      //   label: "Explore Design Work",
+      //   subLabel: "Trending Design to inspire you",
+      //   href: "#",
+      // },
+      // {
+      //   label: "New & Noteworthy",
+      //   subLabel: "Up-and-coming Designers",
+      //   href: "#",
+      // },
     ],
   },
   {
-    label: "Find Work",
+    label: "EXPERT PICKS",
     children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
+      // {
+      //   label: "Job Board",
+      //   subLabel: "Find your dream design job",
+      //   href: "#",
+      // },
+      // {
+      //   label: "Freelance Projects",
+      //   subLabel: "An exclusive list for contract work",
+      //   href: "#",
+      // },
     ],
   },
   {
-    label: "Learn Design",
+    label: "RANKINGS",
     href: "#",
   },
   {
-    label: "Hire Designers",
+    label: "SIGNUP",
     href: "#",
   },
 ];
