@@ -1,47 +1,16 @@
-# Starter Next.js template with chakra UI
-Got tired of always starting projects from scratch. hopefully this helps.
+## Next.js SSR TEST
+This repo is for coding Exercise that ueses Next.js, Chakra UI.
 
-## Getting Started
+# Requirements
+-  Get the geolocation position.
+- Get the closest state and the distance beween where you are.
+- Get the list of offers and display them.
 
-[Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the project and install all dependencies
-```bash
-yarn
-# or
-npm install
-```
-<br/>
+# Caution
+- Store token in an environment variable and secured from public access.
+- Include the environment file so we can easily run your project.
+- Always keep accessibility and responsiveness in mind for every UI element.
+- Use the [current Setup](#setup) without installing any extra packages, unless it's a package you think you need to make progress.
 
-Run the development server
-```bash
-npm run dev
-# or
-yarn dev
-```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the template running.
-
-
-## Batteries Included
-
-### 💎 Next.js and Typescript (Frontend Framework)
- - Documentation - https://nextjs.org/docs
- - Nextjs Typescript docs - https://nextjs.org/docs/basic-features/typescript
-<br/>
-
-### 🎨 Chakra UI (UI Library)
- - Getting Started - https://chakra-ui.com/guides/getting-started/nextjs-guide
- - Customize Theme - https://chakra-ui.com/docs/styled-system/theming/customize-theme
-<br/>
-
-### 🔠 Font Source (Fonts)
- - https://chakra-ui.com/docs/styled-system/recipes/using-fonts
- - Website - https://fontsource.org/docs/guides/nextjs
- - List of Fonts - https://fontsource.org/fonts
-<br/>
-
-### ℹ️ React-Icons (Icons)
- - Documentation - https://react-icons.github.io/react-icons/
-<br/>
-
-### 👽 React Query (API Management)
- - https://react-query.tanstack.com/overview
-<br/>
+# How to start
+- `npm run dev` and you can see page at localhost:3000
